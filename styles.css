@@ -1,0 +1,23 @@
+:root{
+    /*Colores*/
+    --VeryLightPink: #c7c7c7;
+    --White: #FFFFFF;
+    --TextInputField: #f7f7f7;
+    --Black: #000000;
+    --HospitalGreen: #ACD9B2;
+    --Dark: #232830;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 62.5%; */
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
