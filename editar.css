@@ -1,0 +1,294 @@
+:root{
+    /*Colores*/
+    --VeryLightPink: #c7c7c7;
+    --White: #FFFFFF;
+    --TextInputField: #f7f7f7;
+    --Black: #000000;
+    --HospitalGreen: #ACD9B2;
+    --Dark: #232830;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 62.5%; */
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--HospitalGreen);
+    justify-content: center;
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 25px;
+    }
+
+    nav ul{
+        display: none;
+        list-style: none;
+        width: 100%;
+    }
+
+    nav ul li{
+        margin: 12px 0;
+    }
+
+    .check{
+        display: none;
+    }
+
+    .check:checked~ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vw;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+
+    .h3mobile{
+        margin: 20px 0;
+    }
+
+    .p-mobile{
+        margin: 30px 0 0 0 ;
+    }
+
+    .check:checked ~ .yardLogo {
+        display: none;
+    }
+
+    .check:checked ~ .cart {
+        display: none;
+    }
+
+    .check:checked ~ .menu{
+        display: none;
+    }
+
+    .close{
+        height: 10px;
+        width: 10px;
+        margin: 0 90%;
+    }
+
+    
+    .yardLogo{
+        width: 100px;
+        height: 50px;
+        order: 0;
+        margin: 0 35%;
+    }
+
+    .menu{
+        order:-1;
+    }
+
+    .cart{
+        order: 1;
+    }
+
+    .registro{
+        display: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .myacc{
+        margin: 40px 0;
+    }
+
+    .pass{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    main p{
+        color: var(--VeryLightPink)
+    }
+    
+    .pass label{
+        font-weight: bold;
+    }
+
+    .pass input{
+        width: 100%;
+        height: 50px;
+        background-color: var(--TextInputField);
+        border-radius: 5px;
+        border: transparent;
+        margin-bottom: 12px;
+    }
+
+    .logo-content{
+        height: 200px;
+        width: 200px;
+    }
+
+    #button{
+        background-color: var(--HospitalGreen);
+        color: white;
+        font-size: 18px;
+    }
+
+    #signup{
+        display: none;
+    }
+
+    #crbttn{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+    nav{
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .yardLogo{
+        width: 20%;
+        height: 50px;
+    }
+    
+    nav ul{
+        width: 70%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul li{
+        margin-left: 4%;
+        color: var(--VeryLightPink);
+    }
+
+    nav ul li:hover{
+        border: 1px var(--HospitalGreen) solid;
+        border-radius: 5px;
+        color: var(--HospitalGreen);
+        padding: 1%;
+    }
+    .list-mobile{
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+    .check{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .sign{
+        width: 10%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sign a{
+        text-decoration: none;
+        color: var(--HospitalGreen);
+    }
+    
+    .main{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-content{
+        display: none;
+    }
+
+
+    .myacc{
+        margin: 40px 0;
+    }
+
+    #crbttn{
+        background-color: var(--HospitalGreen);
+        color: white;
+        font-size: 20px;
+    }
+
+    .pass{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    main p{
+        color: var(--VeryLightPink);
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .pass label{
+        font-weight: bold;
+    }
+
+    .pass input{
+        width: 100%;
+        height: 50px;
+        background-color: var(--TextInputField);
+        border-radius: 5px;
+        border: transparent;
+        margin-bottom: 12px;
+    }
+
+    .logo-content{
+        height: 200px;
+        width: 200px;
+    }
+
+    #button{
+        background-color: var(--HospitalGreen);
+        color: white;
+        font-size: 18px;
+    }   
+    
+    #signup{
+        margin-top: 20px;
+        height: 50px;
+        width: 50%;
+        background-color: white;
+        color: var(--HospitalGreen);
+        border: 1px var(--HospitalGreen) solid;
+        font-size: 18px;
+    }
+}
